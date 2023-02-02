@@ -46,6 +46,10 @@ myIncome.addEventListener("keyup", (e) => {
 incomeBtn.addEventListener("click", (e) => {
   e.preventDefault();
   finalIncome.innerText = myIncome.value;
+  money.innerHTML = Number(myIncome.value).toFixed(2);
+  finalMoney.innerHTML = finalIncome.innerHTML - finalExpense.innerHTML;
+  spends[spends.length - 1].income = finalIncome.innerHTML;
+  localStorage.setItem("spends", JSON.stringify(spends));
 });
 
 saveBtn.addEventListener("click", (e) => {
