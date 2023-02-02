@@ -1,0 +1,23 @@
+section.container {
+  width: 40%;
+
+  .myForm {
+    border-radius: 0.5rem;
+  }
+  input.expense-input {
+    border-radius: 0.2rem !important;
+  }
+}
+article.container {
+  width: 40%;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.575);
+}
+
+.input-group {
+  justify-content: center;
+}
